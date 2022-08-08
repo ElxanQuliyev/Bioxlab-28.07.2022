@@ -2,16 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .container {
   width: 90%;
   margin: auto;
 }
+
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
+
 .j-between {
   justify-content: space-between;
 }
@@ -19,6 +22,7 @@
 .j-center {
   justify-content: center;
 }
+
 .img-fluid {
   width: 100%;
 }
@@ -26,137 +30,60 @@
 .list-unstyled {
   list-style: none;
 }
+
 .decoration-none {
   text-decoration: none;
 }
+
 .align-center {
   align-items: center;
 }
+
 a {
   text-decoration: none;
 }
-/* Header Start */
-.header {
-  padding: 15px 30px;
+
+.features {
+  padding: 5rem 0;
+}
+.features .features-items .featured-item {
   width: 100%;
-  position: fixed;
-  z-index: 5;
+  padding: 0 15px;
 }
-.header .menu ul li a {
-  display: block;
-  padding: 20px;
-  color: #000;
+.features .features-items .featured-item:hover .img-text span {
+  opacity: 0;
+  transform: translateX(15px);
 }
-.header .nav-call {
-  box-shadow: 0 0 20px 0 #ccc;
-  border-radius: 5px;
-  margin: 15px 0;
-  background: #fff;
-}
-.header .nav-call a {
-  display: block;
-  padding: 20px 30px;
-  color: #000;
-}
-.header .nav-call span {
-  color: #888;
-  font-weight: 600;
-}
-.header .logo {
-  width: 17%;
-}
-.welcome {
-  padding: 15rem 0;
-  position: relative;
-}
-.welcome .welcome-img {
-  position: absolute;
-  top: 0;
+.features .features-items .featured-item:hover .img-text .btn-add {
+  opacity: 1;
   right: 0;
 }
-.welcome .welcome-img img {
-  width: 400px;
-  /* border-radius: 0px 0px 362px 362px; */
-  clip-path: polygon(20% 0%, 80% 0%, 75% 35%, 100% 80%, 56% 78%, 20% 100%, 0% 80%, 0% 20%);
+.features .features-items .featured-item .img-text {
+  position: relative;
 }
-.welcome .welcome-img .welcome-play{
-  background: #10d0a1;
-  display: inline-block;
-  font-size: 2em;
-  padding:30px 38px;
-  color: #fff;
-  border: 4px solid #fff;
-  border-radius: 50%;
+.features .features-items .featured-item .img-text span {
+  transition: 0.4s;
+}
+.features .features-items .featured-item .img-text .btn-add {
   position: absolute;
-  bottom: 60px;
-  right: 20px;
+  right: 15px;
+  top: 8px;
+  opacity: 0;
+  transition: 0.4s;
 }
 
-  .welcome .welcome-content {
-  width: 50%;
+@media (min-width: 576px) {
+  .features .features-items .featured-item {
+    width: 50%;
+  }
 }
-.welcome .welcome-content h1 {
-  font-size: 3.8em;
-  text-transform: capitalize;
-  line-height: 70px;
-  margin: 2rem 0;
-  color: #171151;
+@media (min-width: 768px) {
+  .features .features-items .featured-item {
+    width: 33.333%;
+  }
 }
-.welcome .welcome-content span {
-  color: #0e63ff;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.welcome .welcome-content p {
-  color: #888;
-  font-weight: 600;
-}
-.welcome .welcome-content .welcome-buttons a {
-  display: inline-block;
-  margin: 20px;
-  margin-left: 0;
-  background: #0e63ff;
-  padding: 20px 30px;
-  color: #fff;
-  border-radius: 5px;
-}
-.welcome .welcome-content .welcome-buttons .btn-app {
-  background: #10d0a1;
-}
-
-.welcome-other .welcome-item{
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-  border: 1px solid #ccc;
-  margin: 15px 15px 15px 0;
-  padding: 20px;
-  transition: .4s ease-in-out;
-  border-radius: 10px;
-}
-.welcome-other .welcome-item:hover{
-  border-color: #0e63ff;
-}
-.welcome-other .welcome-item:hover .wel-ico{
-  background:#0e63ff;
-  color: #fff;
-}
-.welcome-other .welcome-item .wel-ico{
-  font-size: 1.6em;
-  padding: 5px 15px;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  transition: .4s ease;
-}
-.welcome-other .welcome-item .wel-text{
-  width: 80%;
-
-}
-.welcome-other .welcome-item:hover:nth-child(1) .wel-ico{
-  background: violet;
-}
-.welcome-other .welcome-item:hover:nth-child(2) .wel-ico{
-  background: #10d0a1;
-}
-.welcome-other .welcome-item:hover:nth-child(3) .wel-ico{
-  background: #0e63ff;
-}
+@media (min-width: 1200px) {
+  .features .features-items .featured-item {
+    width: 25%;
+  }
+}/*# sourceMappingURL=style.css.map */
