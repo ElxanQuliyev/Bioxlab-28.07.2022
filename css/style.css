@@ -1,89 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.most-popular .popular-item:hover .popular-img img {
+  transform: scale(1.1);
 }
-
-.container {
-  width: 90%;
-  margin: auto;
-}
-
-.d-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.j-between {
-  justify-content: space-between;
-}
-
-.j-center {
-  justify-content: center;
-}
-
-.img-fluid {
-  width: 100%;
-}
-
-.list-unstyled {
-  list-style: none;
-}
-
-.decoration-none {
-  text-decoration: none;
-}
-
-.align-center {
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-}
-
-.features {
-  padding: 5rem 0;
-}
-.features .features-items .featured-item {
-  width: 100%;
-  padding: 0 15px;
-}
-.features .features-items .featured-item:hover .img-text span {
-  opacity: 0;
-  transform: translateX(15px);
-}
-.features .features-items .featured-item:hover .img-text .btn-add {
-  opacity: 1;
-  right: 0;
-}
-.features .features-items .featured-item .img-text {
+.most-popular .popular-item .popular-img {
   position: relative;
+  overflow: hidden;
 }
-.features .features-items .featured-item .img-text span {
-  transition: 0.4s;
+.most-popular .popular-item .popular-img img {
+  transition: 0.4s ease-in-out;
 }
-.features .features-items .featured-item .img-text .btn-add {
+.most-popular .popular-item .popular-img span {
   position: absolute;
-  right: 15px;
-  top: 8px;
-  opacity: 0;
-  transition: 0.4s;
+  top: 15px;
+  left: 15px;
+  background: seagreen;
+  padding: 3px 8px;
+  color: #fff;
 }
-
-@media (min-width: 576px) {
-  .features .features-items .featured-item {
-    width: 50%;
-  }
+.most-popular .popular-item .popular-head {
+  background: #eee;
+  padding-left: 15px;
 }
-@media (min-width: 768px) {
-  .features .features-items .featured-item {
-    width: 33.333%;
-  }
+.most-popular .popular-item .popular-head span {
+  background: goldenrod;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
 }
-@media (min-width: 1200px) {
-  .features .features-items .featured-item {
-    width: 25%;
-  }
+.most-popular .popular-item p {
+  margin: 15px 0;
+}
+.most-popular .popular-item .rating {
+  color: gold;
 }/*# sourceMappingURL=style.css.map */
